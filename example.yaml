@@ -1,0 +1,13 @@
+- rule:
+  - or:
+    - file-exist:
+        path: /opt/local/bin/cntlm
+    - and:
+      - file-exist:
+          path: /etc/cntlm.conf
+      - file-hash:
+          path: /etc/ntlm.comf
+          hash: md5
+          value: abcdeef127687346876234abfc
+       
+
